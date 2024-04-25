@@ -31,10 +31,10 @@ class FavoritesPage extends StatelessWidget{
                 iconColor: theme.colorScheme.onPrimary,
                 child: ListTile(
                   trailing: IconButton(
+                    icon: Icon(Icons.remove_circle),
                     onPressed: () {
                       appState.toggleFavorite(pair);
                     }, 
-                    icon: Icon(Icons.remove_circle)
                   ),
                   title: Text(
                     pair.asLowerCase,
